@@ -14,7 +14,7 @@ class Member {
   constructor(name, race, classOfMember, alignment) {
     this.name = name;
     this.race = race;
-    this.class = classOfMember;
+    this.classOfMember = classOfMember;
     this.alignment = alignment;
   }
 }
