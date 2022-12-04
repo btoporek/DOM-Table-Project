@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DnD Character Generator</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body
+    style= "background-size: 1500px; background-image: url(photo-1650024520022-cab7611a460b.avif);">
+  <br>
+  <div class="container-fluid">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent" style="flex-direction: column">
+      <a class="navbar-brand" href="index.html" style="font-size: 30px; font-family:monospace; color:white">  <img style= "height: 40px" src="ClayDowling-D20.png">  DnD Character Creator  <img style= "height: 40px" src="ClayDowling-D20.png"> </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle Navigation"
+      >
+        <span class="navboar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navtext:hover" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="font-size: 15px; margin-bottom: 5px;">
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="creator.html">Character Creator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="creator.html">DnD Party Creator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white" href="feedback.html">Feedback</a>
+          </li>
+          <div style="margin-left: 1em">
+            <form class="d-flex";>
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light btn-dark type="submit" style="text-align:center">Search</button> &nbsp;
+            </form>
+        </div>
+        
+        </nav>
+  
+    <br />
+    <!-- div for table -->
+    <div class="container">
+    <div class="card bg-dark">
+      <div class="card-body bg-dark">
+        <div class="row">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-party-name" class="text-light"
+                >Enter your DnD party name:</label
+              >
+              <input type="text" class="form-control" id="new-party-name" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <button
+          id="new-party"
+          class="btn btn-outline-secondary btn-light text-dark"
+          style="margin-bottom: 10px; margin-left: 15px"
+        >
+          Create
+        </button>
+      </div>
+      <div class="container" id="parties" style="color:white; border-color: aliceblue;"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div>
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
