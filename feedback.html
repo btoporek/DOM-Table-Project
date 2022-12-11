@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Feedback Form</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -47,32 +47,28 @@
           </div>
           
           </nav>
-
-  <br>
-
-
-<ul class="image-list">
-  <li>
-    <a href="#" style="background-image: url('DnD_Hobgoblin.png');"></a>
-    <div class="details">
-      <p class="image-author">Hobgoblin</p>
-    </div>
-  </li>
-  <li>
-    <a href="#" style="background-image: url('DnD_gnome.png');"></a>
-    <div class="details">
-      <p class="image-author">Gnome</p>
-    </div>
-  </li>
-  <li>
-    <a href="#" style="background-image: url('DnD_Djinn.png');"></a>
-    <div class="details">
-      <p class="image-author">Djinn</p>
-    </div>
-  </li>
-
-</ul>
-
+      <br>
+      </div>
+    <div class="container">
+      <p>Did we miss something? Have ideas on what to add to the generator? Submit your feedback below to help us improve!</p>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="inputName" class="form-label">Name</label>
+          <input type="name" class="form-control" id="inputName" placeholder="Name">
+        </div>
+        <div class="col-md-6">
+          <label for="inputEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+        </div>
+        <div class="col-12">
+          <label for="inputSuggestions" class="form-label">Suggestions and Feedback</label>
+          <input type="text" class="form-control" id="inputSuggestions" placeholder="Type Here">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-light">Submit</button>
+        </div>
+        </form>
+</div>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 <script src="node_modules/jquery/dist/jquery.js"></script>
   </body>
